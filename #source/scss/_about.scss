@@ -1,0 +1,59 @@
+.about {
+  background-color: #fbfbfb;
+
+  padding: 125px 0;
+  margin-bottom: 136px;
+  // .about__title
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  // .about__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 19px;
+    counter-reset: ul;
+  }
+
+  // .about__item
+
+  &__item {
+    background-color: #fff;
+    padding: 58px 37px;
+  }
+
+  // .about__item-title
+
+  &__item-title {
+    font-family: "Panton", sans-serif;
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 1.22;
+
+    color: #222222;
+    margin-bottom: 7px;
+
+    counter-increment: ul;
+
+    &:before {
+      content: counter(ul);
+
+      color: $accent-color;
+      font-size: 4.8rem;
+      margin-bottom: 8px;
+      display: block;
+    }
+  }
+
+  // .about__item-desc
+
+  &__item-desc {
+    font-size: 2.4rem;
+    line-height: 1.17;
+
+    color: #292929;
+  }
+}

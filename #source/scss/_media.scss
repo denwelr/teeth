@@ -1,0 +1,192 @@
+.title {
+  @media screen and (max-width: 900px) {
+    font-size: 36px;
+  }
+}
+.desc {
+  @media screen and (max-width: 900px) {
+    font-size: 18px;
+  }
+}
+
+html {
+  @media screen and (max-width: 1400px) {
+    font-size: 8px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 6px;
+  }
+}
+
+/*=============================================
+=            head            =
+=============================================*/
+
+/*=====  End of head  ======*/
+
+/*=============================================
+=            header            =
+=============================================*/
+.header {
+  &__work-mode {
+    @media screen and (max-width: 1425px) {
+      display: none;
+    }
+  }
+  &__address {
+    @media screen and (max-width: 1260px) {
+      display: none;
+    }
+  }
+  &__socials {
+    @media screen and (max-width: 1015px) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    @media screen and (max-width: 855px) {
+      display: flex;
+    }
+  }
+
+  &__head-btn {
+    @media screen and (max-width: 540px) {
+      display: none;
+    }
+  }
+
+  &__tel {
+    @media screen and (max-width: 380px) {
+      display: none;
+    }
+  }
+
+  &__body {
+    @media screen and (max-width: 1264px) {
+      background-position: right 50%;
+    }
+    @media screen and (max-width: 600px) {
+      background-position: 0 0;
+    }
+  }
+  &__advantages-body {
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__advantage {
+    @media screen and (max-width: 900px) {
+      justify-content: flex-start !important;
+    }
+  }
+}
+
+.services {
+  @media screen and (max-width: 769px) {
+    margin-bottom: 50px;
+  }
+  &__btn {
+    @media screen and (max-width: 490px) {
+      padding: 20px 52px;
+      flex: 1 1 auto;
+    }
+  }
+}
+.about,
+.benefits {
+  @media screen and (max-width: 769px) {
+    margin-bottom: 0;
+  }
+}
+.awards {
+  @media screen and (max-width: 769px) {
+    margin-bottom: 50px;
+  }
+}
+
+/*=====  End of header  ======*/
+
+/*=============================================
+=            reference            =
+=============================================*/
+.reference {
+  @media screen and (max-width: 1500px) {
+    overflow: hidden;
+    color: #fff;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &__content {
+      position: relative;
+      z-index: 1;
+    }
+
+    &__img {
+      bottom: -100px;
+    }
+
+    &__title,
+    &__label {
+      color: #fff;
+    }
+  }
+}
+/*=====  End of reference  ======*/
+
+/*=============================================
+=            benefits            =
+=============================================*/
+
+.benefits {
+  &__slider {
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
+  }
+}
+
+/*=====  End of benefits  ======*/
+
+/*=============================================
+=            specialists            =
+=============================================*/
+
+.specialists {
+  &__items {
+    @media screen and (max-width: 1100px) {
+      grid-template-columns: 1fr;
+    }
+    @media screen and (max-width: 560px) {
+      grid-auto-rows: auto;
+    }
+  }
+
+  &__item {
+    padding: 30px;
+  }
+
+  &__item-preview {
+    @media screen and (max-width: 560px) {
+      display: none;
+    }
+  }
+}
+
+/*=====  End of specialists  ======*/
+
+.footer {
+  &__body {
+    @media screen and (max-width: 1150px) {
+      flex-direction: column;
+    }
+  }
+}

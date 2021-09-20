@@ -1,0 +1,162 @@
+$accent-color: #38bcea;
+
+*,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  overflow-wrap: break-word;
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body.hidden {
+  overflow-y: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+svg {
+  fill: none;
+}
+
+input,
+button,
+textarea {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input,
+button {
+  border: 0;
+  background: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+.wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: inherit;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1655px;
+  padding: 0 20px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 1.23;
+
+  color: #12354b;
+  font-family: "Panton", sans-serif;
+  font-weight: 700;
+}
+
+.desc {
+  font-size: 2.4rem;
+  line-height: 1.16;
+
+  color: #737373;
+}
+
+.btn {
+  background-color: $accent-color;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+
+  min-width: 100px;
+  text-align: center;
+
+  display: inline-block;
+  color: #fff;
+
+  transition: 300ms;
+
+  &:hover {
+    background-color: darken($accent-color, 10%);
+  }
+}
+
+@import "header";
+@import "services";
+@import "about";
+@import "reference";
+@import "benefits";
+@import "specialists";
+@import "awards";
+@import "footer";
+@import "burger";
+@import "media";
+
+.body-link {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: $accent-color;
+  padding: 15px;
+  color: #fff;
+  transform: translateX(200%);
+  transition: 300ms;
+  z-index: 99999;
+
+  display: flex;
+
+  border-radius: 50%;
+
+  &:hover {
+    background-color: darken($accent-color, 10%);
+  }
+
+  svg {
+    margin: auto;
+    fill: #fff;
+    transform: rotate(180deg);
+  }
+}
+.body-link.body-link_visible {
+  transform: none;
+}
