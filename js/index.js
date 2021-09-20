@@ -39,7 +39,7 @@ const wrapper = document.querySelector('.wrapper');
 const bodyLink = document.querySelector('.body-link');
 
 window.addEventListener('scroll', function(){
-    if(window.pageYOffset > parseInt(getComputedStyle(wrapper).height) - 1000) bodyLink.classList.add('body-link_visible');
+    if(window.pageYOffset > wrapper.scrollHeight - 1000) bodyLink.classList.add('body-link_visible');
     else bodyLink.classList.remove('body-link_visible');
 });
 bodyLink.addEventListener('click', (e) => {
