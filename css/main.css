@@ -44,7 +44,8 @@ button {
   background: none;
 }
 
-input:focus {
+input:focus,
+button:focus {
   outline: none;
 }
 
@@ -63,7 +64,6 @@ address {
 
 .wrapper {
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 h1,
@@ -157,12 +157,6 @@ p {
           align-items: center;
 }
 
-.header__socials_burger {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-
 .header__social svg {
   -webkit-transition: -webkit-transform 300ms;
   transition: -webkit-transform 300ms;
@@ -230,12 +224,6 @@ p {
           flex: 0 0 120px;
 }
 
-.header__address_burger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header__address, .header__work-mode, .header__tel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,13 +237,6 @@ p {
 
 .header__address img, .header__work-mode img, .header__tel img {
   margin-right: 9px;
-}
-
-.header__address_burger, .header__work-mode_burger, .header__tel_burger {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  font-size: 24px !important;
 }
 
 .header__tel {
@@ -274,10 +255,6 @@ p {
   border-radius: 3px;
   font-size: 15px;
   line-height: 18px;
-}
-
-.header__head-btn_burger {
-  display: block !important;
 }
 
 .header__body {
@@ -353,9 +330,13 @@ p {
           justify-content: center;
 }
 
-.header__advantage span,
 .header__advantage img {
-  margin: 0 15px;
+  height: 43px;
+  width: 90px;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+  -o-object-fit: none;
+     object-fit: none;
 }
 
 .header__advantage-text {
@@ -896,7 +877,7 @@ p {
 .specialists__item-body {
   position: relative;
   z-index: 1;
-  width: 298px;
+  max-width: 298px;
 }
 
 .specialists__item-body p + p {
@@ -1311,8 +1292,8 @@ p {
 =============================================*/
 @media screen and (max-width: 1100px) {
   .specialists__items {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
   }
 }
 

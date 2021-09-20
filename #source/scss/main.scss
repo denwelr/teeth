@@ -43,10 +43,10 @@ input,
 button {
   border: 0;
   background: none;
-}
 
-input:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 button {
@@ -64,7 +64,7 @@ address {
 
 .wrapper {
   overflow-y: auto;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 }
 
 h1,

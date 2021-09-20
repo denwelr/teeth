@@ -163,7 +163,7 @@ html {
 .specialists {
   &__items {
     @media screen and (max-width: 1100px) {
-      grid-template-columns: 1fr;
+      grid-template-columns: auto;
     }
     @media screen and (max-width: 560px) {
       grid-auto-rows: auto;

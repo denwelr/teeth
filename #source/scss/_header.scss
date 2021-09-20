@@ -31,10 +31,6 @@
   &__socials {
     display: flex;
     align-items: center;
-
-    &_burger {
-      display: flex !important;
-    }
   }
 
   // .header__social
@@ -101,9 +97,6 @@
     span {
       flex: 0 0 120px;
     }
-    &_burger {
-      display: flex;
-    }
   }
 
   &__address,
@@ -116,11 +109,6 @@
 
     img {
       margin-right: 9px;
-    }
-
-    &_burger {
-      display: flex !important;
-      font-size: 24px !important;
     }
   }
 
@@ -147,10 +135,6 @@
 
     font-size: 15px;
     line-height: 18px;
-
-    &_burger {
-      display: block !important;
-    }
   }
 
   // .header__body
@@ -236,9 +220,11 @@
       justify-content: center;
     }
 
-    span,
     img {
-      margin: 0 15px;
+      height: 43px;
+      width: 90px;
+      object-position: 0 0;
+      object-fit: none;
     }
   }
 

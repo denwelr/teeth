@@ -88,19 +88,6 @@ const headBtn = document.querySelector('.header__head-btn');
 const telNumber = document.querySelector('.header__tel');
 
 window.addEventListener('resize', () => {
-    if(window.innerWidth < 1425 && !workMode.classList.contains('header__work-mode_burger')) {
-        workMode.classList.add('header__work-mode_burger');
-        headerNav.append(workMode);
-    }
-    if(window.innerWidth < 1260 && !address.classList.contains('header__address_burger')) {
-        address.classList.add('header__address_burger');
-        headerNav.append(address);
-    }
-    if(window.innerWidth < 1015 && !socials.classList.contains('header__socials_burger')) {
-        socials.classList.add('header__socials_burger');
-        headerNav.append(socials);
-    }
-
     if(window.innerWidth < 750 && !awardsSliderWrapper.classList.contains('awards__container_short')) {
         const awardsSliderNav = document.querySelectorAll('.awards__nav');
         const newContainer = document.createElement('div');
@@ -112,15 +99,6 @@ window.addEventListener('resize', () => {
             newContainer.append(item);
         });
         awardsSliderWrapper.append(newContainer);
-    }
-
-    if(window.innerWidth < 540 && !headBtn.classList.contains('header__head-btn_burger')) {
-        headBtn.classList.add('header__head-btn_burger');
-        headerNav.append(headBtn);
-    }
-    if(window.innerWidth < 380 && !telNumber.classList.contains('header__tel_burger')) {
-        telNumber.classList.add('header__tel_burger');
-        headerNav.append(telNumber);
     }
 
     /* Колонки в секции "Услуги" */
